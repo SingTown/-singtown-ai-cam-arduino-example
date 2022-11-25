@@ -36,7 +36,7 @@ int readByte() {
   return -1;
 }
 
-int checkCrc(char* payload) {
+int checkCrc(unsigned char* payload) {
   unsigned char num = payload[0];
   unsigned char crc = 0;
   int i = 0, j = 0;
@@ -103,7 +103,7 @@ void loop() {  // run over and over
   int i;
   if (camSerial.available()) {
     num = read_singtownaicam_objs();
-    Serial.print("Found Object Numer: ");
+    Serial.print("Found Object Number: ");
     Serial.println(num);
 
     for (i = 0; i < num; i++) {
