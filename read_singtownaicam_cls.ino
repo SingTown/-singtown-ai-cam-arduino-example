@@ -45,7 +45,6 @@ int read_singtownaicam_cls() {
   int i;
   unsigned char num;
   unsigned char payload[CLASSES_MAX + 2];
-  unsigned char* obj_ptr;
   int byte;
   while (1) {
     if (readByte() != 0xeb) continue;
