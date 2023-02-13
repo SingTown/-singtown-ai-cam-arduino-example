@@ -41,7 +41,7 @@ int check_crc(unsigned char* payload) {
   return crc;
 }
 
-int read_singtownaicam_objs() {
+int read_singtownaicam_cls() {
   int i;
   unsigned char num;
   unsigned char payload[CLASSES_MAX + 2];
@@ -84,7 +84,7 @@ void loop() {  // run over and over
   int num;
   int i;
   if (camSerial.available()) {
-    num = read_singtownaicam_objs();
+    num = read_singtownaicam_cls();
     Serial.print("Classify Number: ");
     Serial.print(num);
 
