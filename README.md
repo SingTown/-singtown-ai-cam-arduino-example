@@ -1,4 +1,6 @@
 # Recive AI results from SingTown AI Cam
 
-Ojbect Detection: use read_singtownaicam_objs.ino
-Classify: use read_singtownaicam_cls.ino
+1. Ojbect Detection: use read_singtownaicam_objs.ino
+2. Classify: use read_singtownaicam_cls.ino
+
+Document: https://docs.singtown.com/ai/zh/latest/index.html
